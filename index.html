@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagawa Esther — Full-Stack Developer | Kampala, Uganda</title>
+  <meta name="description"
+    content="Nagawa Esther is a Full-Stack Developer from Kampala, Uganda specialising in React, Django, Laravel PHP and Flutter. Available for remote & on-site opportunities worldwide." />
+  <meta name="keywords"
+    content="Nagawa Esther, Full-Stack Developer, React, Django, Laravel, Flutter, Uganda, Portfolio" />
+  <meta name="author" content="Nagawa Esther" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nagawa Esther — Full-Stack Developer" />
+  <meta property="og:description" content="Building practical, user-focused digital solutions in web and mobile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nagawaesther.github.io" />
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Blobs -->
+  <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-3" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Nagawa Esther Home">NE.</a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Hire Me</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero introduction">
+    <div class="container hero-inner">
+
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <div class="hero-tag">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="highlight">Nagawa Esther</span>
+        </h1>
+
+        <p class="hero-title">
+          <span id="typing-prefix">I build&nbsp;</span>
+          <span class="typing-text" id="typing-target"></span><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-desc">
+          I'm a Full-Stack Developer who loves turning real problems into software people
+          actually enjoy using. I've shipped everything from insurance platforms to healthcare
+          booking systems and I'm always looking for the next challenge.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://drive.google.com/file/d/1FQ8G3s0HxVTrsABxDPZkK2NUNVqpPXvO/view" target="_blank"
+            rel="noopener" id="btn-resume" class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" id="btn-projects" class="btn btn-outline">
+            <i class="fa-solid fa-rocket"></i> Explore Projects
+          </a>
+        </div>
+
+
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="photo-frame">
+          <div class="photo-ring"></div>
+          <div class="photo-ring-inner"></div>
+          <div class="photo-img">
+            <!-- 📸 REPLACE THIS with your actual photo -->
+            <img src="assets/profile.png.png" alt="Nagawa Esther — Full-Stack Developer" />
+          </div>
+
+          <div class="photo-badge badge-top-right">
+            <span class="badge-icon">💼</span>
+            <div>
+              <div class="badge-text">Open to Work</div>
+              <div class="badge-sub">Remote &amp; On-site</div>
+            </div>
+          </div>
+
+          <div class="photo-badge badge-bottom-left">
+            <span class="badge-icon">📍</span>
+            <div>
+              <div class="badge-text">Kampala, Uganda</div>
+              <div class="badge-sub">UTC+3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section" aria-label="About Nagawa Esther">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="about-heading">
+        <span class="section-label reveal">About Me</span>
+        <h2 class="section-title reveal reveal-delay-1">
+          A developer who builds <span class="highlight">real-world impact</span>
+        </h2>
+      </div>
+
+      <!-- Text + Meta side-by-side -->
+      <div class="about-body">
+        <div class="about-split reveal reveal-delay-2">
+
+          <!-- Left Column: Bio -->
+          <div class="about-info-col">
+            <h3 class="about-sub-title">Who I am</h3>
+            <p class="about-text">
+              I'm a Full-Stack Developer based in Kampala, Uganda. I build web and mobile apps
+              using React, Django, Laravel PHP and Flutter and I genuinely enjoy the whole
+              process, from wireframe to deployment.
+            </p>
+            <p class="about-text">
+              I've worked on projects in insurance, education,entertainment and healthcare. Good software in
+              those spaces can change someone's day (or their life) so I put a lot of care into
+              clean architecture, solid API design and making sure things scale.
+            </p>
+            <div class="about-social">
+              <a href="https://github.com/NagawaEsther" target="_blank" rel="noopener" class="social-link"
+                id="social-github-about" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/nagawa-esther-351b61295/" target="_blank" rel="noopener"
+                class="social-link" id="social-linkedin-about" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:nagawaesther227@gmail.com" class="social-link" id="social-email-about" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+256762524710" class="social-link" id="social-phone-about" aria-label="Phone">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Meta Info -->
+          <div class="about-meta-col">
+            <div class="about-meta">
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <div class="meta-info">
+                  <div class="meta-key">Location</div>
+                  <div class="meta-val">Kampala, Uganda</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">🌍</span>
+                <div class="meta-info">
+                  <div class="meta-key">Availability</div>
+                  <div class="meta-val">Remote &amp; On-site</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">💻</span>
+                <div class="meta-info">
+                  <div class="meta-key">Focus Area</div>
+                  <div class="meta-val">Full-Stack &amp; Mobile</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Stats strip -->
+        <div class="about-stats-strip reveal reveal-delay-3">
+          <div class="about-strip-stat">
+            <div class="about-strip-num">4+</div>
+            <div class="about-strip-label">Projects Shipped</div>
+          </div>
+          <div class="about-strip-divider"></div>
+          <div class="about-strip-stat">
+            <div class="about-strip-num">2+</div>
+            <div class="about-strip-label">Years Building</div>
+          </div>
+          <div class="about-strip-divider"></div>
+          <div class="about-strip-stat">
+            <div class="about-strip-num">3</div>
+            <div class="about-strip-label">Live Systems</div>
+          </div>
+          <div class="about-strip-divider"></div>
+          <div class="about-strip-stat">
+            <div class="about-strip-num">4</div>
+            <div class="about-strip-label">Sectors Served</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section id="skills" class="section" aria-label="Technical skills">
+    <div class="container">
+      <div class="skills-header reveal">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Skills &amp; <span class="highlight">Technologies</span></h2>
+        <p class="section-subtitle">
+          A solid toolkit built across full-stack web, mobile and data work. I pick the
+          right tool for the job and learn new ones fast.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-icon">🔤</div>
+          <div class="skill-card-title">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">PHP</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-icon">🧩</div>
+          <div class="skill-card-title">Frameworks</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Laravel PHP</span>
+            <span class="skill-tag">Flutter</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card-icon">🗄️</div>
+          <div class="skill-card-title">Databases</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Supabase</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-icon">🛠️</div>
+          <div class="skill-card-title">Tools &amp; Platforms</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-icon">📱</div>
+          <div class="skill-card-title">Mobile Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">Cross-platform</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card-icon">📊</div>
+          <div class="skill-card-title">Data &amp; AI</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">API Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects" class="section" aria-label="Featured projects">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <span class="section-label reveal">My Work</span>
+          <h2 class="section-title reveal">Featured <span class="highlight">Projects</span></h2>
+        </div>
+        <p class="section-subtitle reveal" style="text-align:right;">
+          Real systems built for real users, spanning insurance, education, healthcare and entertainment.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: ACPS (FEATURED) ── -->
+        <article class="project-card featured reveal" id="project-acps">
+          <div class="project-img-wrap">
+            <!-- 📸 REPLACE with your actual ACPS screenshot -->
+            <img src="assets/project-acps.png.PNG" alt="Automated Claims Processing System screenshot" />
+            <div class="project-img-overlay"></div>
+            <div class="project-live-badge">LIVE</div>
+            <div class="project-num">01</div>
+          </div>
+          <div class="project-body">
+            <div class="project-stack">
+              <span class="stack-tag stack-python">Python</span>
+              <span class="stack-tag stack-django">Django</span>
+              <span class="stack-tag stack-react">React.js</span>
+            </div>
+            <h3 class="project-title">Automated Claims Processing System</h3>
+            <p class="project-desc">
+              A full-stack insurance claims portal built for Old Mutual Uganda. It handles
+              the entire claims process digitally, from the moment a policyholder logs a claim
+              right through to final settlement.
+            </p>
+            <ul class="project-highlights">
+              <li>Automated claim submission with a multi-stage verification workflow</li>
+              <li>Role-based dashboards for policyholders, staff and approvers</li>
+              <li>Cut down manual workload and made processing noticeably faster</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://157.245.237.56/" target="_blank" rel="noopener" id="link-acps-live"
+                class="proj-link proj-link-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+              </a>
+              <span class="proj-link proj-link-ghost">
+                <i class="fa-solid fa-building-columns"></i> Old Mutual Uganda
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 2: Student Management System ── -->
+        <article class="project-card reveal reveal-delay-1" id="project-sms">
+          <div class="project-img-wrap">
+            <!-- 📸 REPLACE with your actual SMS screenshot -->
+            <img src="assets/project-sms.png.PNG" alt="Student Management System screenshot" />
+            <div class="project-img-overlay"></div>
+            <div class="project-live-badge">LIVE</div>
+            <div class="project-num">02</div>
+          </div>
+          <div class="project-body">
+            <div class="project-stack">
+              <span class="stack-tag stack-laravel">Laravel PHP</span>
+              <span class="stack-tag stack-php">PHP</span>
+            </div>
+            <h3 class="project-title">Student Management System</h3>
+            <p class="project-desc">
+              An academic management platform deployed at WITI Uganda. It keeps student
+              records, attendance and performance all in one place so staff spend less time
+              on admin and more time on teaching.
+            </p>
+            <ul class="project-highlights">
+              <li>Centralised student records and academic history</li>
+              <li>Automated attendance and performance tracking</li>
+              <li>Improved day-to-day efficiency across the whole institution</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://witi.ac.ug/elearning/index.php" target="_blank" rel="noopener" id="link-sms-live"
+                class="proj-link proj-link-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 3: Save Lives App ── -->
+        <article class="project-card reveal reveal-delay-2" id="project-savelives">
+          <div class="project-img-wrap">
+            <!-- 📸 REPLACE with your actual Save Lives screenshot -->
+            <img src="assets/project-savelives.png.PNG" alt="Save Lives App screenshot" />
+            <div class="project-img-overlay"></div>
+            <div class="project-live-badge">LIVE</div>
+            <div class="project-num">03</div>
+          </div>
+          <div class="project-body">
+            <div class="project-stack">
+              <span class="stack-tag stack-react">React.js</span>
+              <span class="stack-tag stack-django">Django</span>
+            </div>
+            <h3 class="project-title">Save Lives App</h3>
+            <p class="project-desc">
+              A medical appointment booking platform that connects patients with doctors.
+              I built it to make it easier for people to access healthcare without the
+              usual back and forth of calling a clinic.
+            </p>
+            <ul class="project-highlights">
+              <li>Simple appointment booking with doctor profiles and availability</li>
+              <li>Real-time scheduling management for clinics</li>
+              <li>Designed with accessibility in mind for underserved communities</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://save-lives-three.vercel.app/" target="_blank" rel="noopener" id="link-savelives-live"
+                class="proj-link proj-link-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 4: CinePlay ── -->
+        <article class="project-card reveal reveal-delay-3" id="project-cineplay" style="grid-column:1/-1">
+          <div class="project-img-wrap cineplay-img-wrap">
+            <!-- CinePlay full portrait screenshot -->
+            <img src="assets/project-cineplay.png.jpeg" alt="CinePlay Movie App screenshot" class="cineplay-img" />
+            <div class="project-img-overlay"></div>
+            <div class="project-num">04</div>
+          </div>
+          <div class="project-body">
+            <div class="project-stack">
+              <span class="stack-tag stack-flutter">Flutter</span>
+              <span class="stack-tag stack-dart">Dart</span>
+            </div>
+            <h3 class="project-title">CinePlay — Movie Browsing App</h3>
+            <p class="project-desc">
+              A mobile movie-browsing app I built with Flutter and Dart. It pulls in live
+              movie data from APIs and gives users a clean, enjoyable experience for
+              discovering what to watch next.
+            </p>
+            <ul class="project-highlights">
+              <li>Live movie data pulled in from real-time APIs</li>
+              <li>Works smoothly on both iOS and Android</li>
+              <li>Browse by category, check ratings and search titles easily</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/17Z0Y13k6YQw-DkI62aF_6nPRJ8zfxOpy/view" target="_blank"
+                rel="noopener" id="link-cineplay-demo" class="proj-link proj-link-primary">
+                <i class="fa-solid fa-download"></i> Download APK
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════ -->
+  <section id="education" class="section" aria-label="Education and training">
+    <div class="container">
+      <div class="education-header">
+        <span class="section-label reveal">Background</span>
+        <h2 class="section-title reveal">Education &amp; <span class="highlight">Training</span></h2>
+        <p class="section-subtitle reveal" style="margin:0 auto;">
+          I combined formal study with a hands-on apprenticeship so every skill I have has
+          been tested on real software in production.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🎓</div>
+          <div class="timeline-card">
+            <span class="timeline-period">2025 – Expected 2026</span>
+            <h3 class="timeline-degree">Software Engineering Apprenticeship</h3>
+            <div class="timeline-school">Refactory Academy, Uganda</div>
+            <p class="timeline-desc">
+              A hands-on programme where I work on real software alongside experienced
+              engineers. Day to day that means agile sprints, code reviews, system design
+              discussions and shipping things that actually go live.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot">🏛️</div>
+          <div class="timeline-card">
+            <span class="timeline-period">2023 – 2025</span>
+            <h3 class="timeline-degree">Diploma in Computer Science</h3>
+            <div class="timeline-school">Women's Institute of Technology &amp; Innovation (WITI), Uganda</div>
+            <p class="timeline-desc">
+              Two years of solid computer science training covering programming, databases,
+              networking and systems analysis. I graduated with practical project experience
+              on both web and mobile platforms.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="section" aria-label="Contact Nagawa Esther">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:52px;">
+        <span class="section-label reveal">Get In Touch</span>
+        <h2 class="section-title reveal">Let's Build Something <span class="highlight">Meaningful</span></h2>
+        <p class="section-subtitle reveal" style="margin:0 auto;">
+          Got a project in mind, a role you think I'd be great for, or just want to chat?
+          Feel free to reach out through any of the options below.
+        </p>
+      </div>
+
+      <div class="contact-inner">
+        <!-- Left: info -->
+        <div>
+          <p class="contact-text reveal">
+            I'm open to full-time, part-time and freelance work, remote or on-site, anywhere
+            in the world. Whether you're a small startup or a big organisation, I'd love to
+            bring my skills to your team.
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:nagawaesther227@gmail.com" class="contact-item reveal reveal-delay-1" id="contact-email"
+              aria-label="Send email to Nagawa Esther">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">nagawaesther227@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:+256762524710" class="contact-item reveal reveal-delay-2" id="contact-phone"
+              aria-label="Call Nagawa Esther">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-item-label">Phone / WhatsApp</div>
+                <div class="contact-item-value">+256 762 524 710</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/NagawaEsther" target="_blank" rel="noopener"
+              class="contact-item reveal reveal-delay-3" id="contact-github" aria-label="GitHub Profile">
+              <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-value">github.com/NagawaEsther</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nagawa-esther-351b61295/" target="_blank" rel="noopener"
+              class="contact-item reveal reveal-delay-4" id="contact-linkedin" aria-label="LinkedIn Profile">
+              <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-value">Nagawa Esther</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <h3 class="form-title">Send a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" name="subject"
+                placeholder="Project inquiry / Job offer / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or role..."
+                required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="contact-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div class="form-success" id="form-success" role="alert">
+            <i class="fa-solid fa-circle-check"
+              style="font-size:2rem;margin-bottom:8px;display:block;color:var(--teal)"></i>
+            Message sent! I'll get back to you shortly 🙌
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <span class="footer-logo">NE.</span>
+      <span class="footer-copy">
+        © 2026 Nagawa Esther &nbsp;·&nbsp; Built with ❤️ in Kampala, Uganda
+      </span>
+      <div class="footer-social">
+        <a href="https://github.com/NagawaEsther" target="_blank" rel="noopener" class="social-link" id="footer-github"
+          aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nagawa-esther-351b61295/" target="_blank" rel="noopener"
+          class="social-link" id="footer-linkedin" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:nagawaesther227@gmail.com" class="social-link" id="footer-email" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
