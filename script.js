@@ -143,37 +143,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ── Contact form (mailto fallback) ── */
-const contactForm = document.getElementById('contact-form');
-const formSuccess = document.getElementById('form-success');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const name    = document.getElementById('form-name').value.trim();
-    const email   = document.getElementById('form-email').value.trim();
-    const subject = document.getElementById('form-subject').value.trim();
-    const message = document.getElementById('form-message').value.trim();
-
-    if (!name || !email || !message) {
-      alert('Please fill in your name, email, and message.');
-      return;
-    }
-
-    // Build mailto link
-    const mailto = `mailto:nagawaesther227@gmail.com`
-      + `?subject=${encodeURIComponent(subject || 'Portfolio Contact: ' + name)}`
-      + `&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-
-    window.location.href = mailto;
-
-    // Show success state after a short delay
-    setTimeout(() => {
-      contactForm.style.display = 'none';
-      formSuccess.style.display = 'block';
-    }, 800);
-  });
-}
 
 /* ── Parallax subtle effect on hero blobs (mouse move) ── */
 document.addEventListener('mousemove', e => {
